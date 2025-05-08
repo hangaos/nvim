@@ -21,7 +21,6 @@ map("n", "<D-a>", "ggVG", { noremap = true, silent = true, desc = "Select All" }
 map("n", "<D-z>", "<Cmd>undo<CR>", { silent = true, noremap = true, desc = "Undo" })
 map("n", "<D-S-z>", "<Cmd>redo<CR>", { silent = true, noremap = true, desc = "Redo" })
 
-
 -- Neo-Tree Keymaps
 map(
 	"n",
@@ -29,13 +28,7 @@ map(
 	"<cmd>Neotree filesystem toggle left<CR>",
 	{ desc = "Toggle Neo-tree (Filesystem)", silent = true, noremap = true }
 )
--- Refresh Neo-tree (filesystem source)
-map(
-	"n",
-	"<leader>r",
-	"<cmd>Neotree filesystem refresh<CR>",
-	{ desc = "Refresh Neo-tree", silent = true, noremap = true }
-)
+
 -- Reveal current file in Neo-tree (filesystem source, on the left)
 map(
 	"n",
@@ -45,7 +38,6 @@ map(
 )
 -- Focus Neo-tree window
 map("n", "<leader>o", "<cmd>Neotree focus<CR>", { desc = "Neo-tree Focus", silent = true, noremap = true })
-
 
 -- =============================================================================
 -- == Insert Mode Mappings ==
@@ -59,4 +51,3 @@ map("n", "<leader>o", "<cmd>Neotree focus<CR>", { desc = "Neo-tree Focus", silen
 -- Add Visual mode mappings here later
 -- Example: map('v', '<', '<gv', opts)
 -- Example: map('v', '>', '>gv', opts)
-

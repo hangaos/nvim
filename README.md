@@ -2,6 +2,7 @@
 
 [![Neovim Requirement](https://img.shields.io/badge/Neovim-0.8%2B-blueviolet.svg)](https://neovim.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Welcome to my personalized Neovim setup! This configuration is meticulously crafted to provide a highly efficient, visually appealing, and productive development environment.
 
 ## 🌟 Overview
