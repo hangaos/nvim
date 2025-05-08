@@ -17,6 +17,9 @@ local opts = { noremap = true, silent = true }
 -- G: go to last line
 map("n", "<D-a>", "ggVG", { noremap = true, silent = true, desc = "Select All" }) -- Added desc
 
+-- Clear highlight search
+map("n", "<Esc>", "<cmd>nohlsearch<CR>", keymap_opts("Clear Search Highlight & Escape"))
+
 -- Undo/Redo (macOS like, optional)
 map("n", "<D-z>", "<Cmd>undo<CR>", { silent = true, noremap = true, desc = "Undo" })
 map("n", "<D-S-z>", "<Cmd>redo<CR>", { silent = true, noremap = true, desc = "Redo" })

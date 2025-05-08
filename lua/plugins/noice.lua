@@ -1,6 +1,6 @@
 return {
 	"folke/noice.nvim",
-	event = "VeryLazy",
+	event = "VimEnter",
 	dependencies = {
 		"MunifTanjim/nui.nvim",
 		"rcarriga/nvim-notify", -- Ensure notify.lua is configured with timeout and vim.notify override
@@ -81,8 +81,8 @@ return {
 		-- Views: Customize the appearance of Noice UIs
 		views = {
 			cmdline_popup = {
-				position = { row = "20%", col = "50%" }, -- Position higher up
-				size = { width = "60%", min_width = 60, height = "auto" },
+				position = { row = "95%", col = "98%", anchor = "SE" }, -- Position higher up
+				size = { width = "30%", min_width = 60, height = "auto" },
 				border = { style = "rounded", padding = { 0, 1 } },
 				win_options = {
 					winhighlight = "Normal:Normal,FloatBorder:FloatBorder",

@@ -43,7 +43,7 @@ return {
 			-- Offsets for other UI elements like NvimTree
 			offsets = {
 				{
-					filetype = "NvimTree",
+					filetype = "neo-tree",
 					text = "File Explorer", -- Or just "" for no text
 					text_align = "left",
 					separator = true, -- Show a separator next to the NvimTree offset
