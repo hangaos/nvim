@@ -55,7 +55,7 @@ return {
 	-- These will also act as triggers for lazy-loading the plugin
 	keys = {
 		-- Main toggle for a floating terminal
-		{ "<D-t>", "<cmd>ToggleTerm<cr>", mode = { "n", "t" }, desc = "ToggleTerm (Float)" },
+		{ "<leader>tr", "<cmd>ToggleTerm<cr>", mode = { "n", "t" }, desc = "ToggleTerm (Float)" },
 		{ "<leader>tf", "<cmd>ToggleTerm direction=float<cr>", mode = "n", desc = "ToggleTerm Float" },
 		-- Toggle vertical terminal
 		{ "<leader>tv", "<cmd>ToggleTerm direction=vertical<cr>", mode = "n", desc = "ToggleTerm Vertical" },
