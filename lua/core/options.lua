@@ -31,7 +31,7 @@ vim.opt.mouse = "a" -- Enable mouse support in all modes
 vim.opt.backspace = "indent,eol,start" -- Make backspace more flexible
 vim.opt.undofile = true -- Enable persistent undo
 vim.opt.updatetime = 250 -- Faster update time (for plugins like LSP)
-vim.opt.timeoutlen = 200 -- Shorter timeout for key sequences (e.g., leader key)
+vim.opt.timeoutlen = 300 -- Shorter timeout for key sequences (e.g., leader key)
 
 -- Leader Key (Very Important!)
 vim.g.mapleader = " " -- Set the leader key to Space
@@ -41,8 +41,11 @@ vim.g.maplocalleader = " " -- Set the local leader key to Space
 vim.opt.backup = false
 vim.opt.writebackup = false
 
--- others
+-- Others
 vim.opt.cmdheight = 0
+
+-- Clipboard
+vim.opt.clipboard = "unnamedplus"
 
 -- Optional: Create undo directory if it doesn't exist
 -- This helps keep your main config directory clean
