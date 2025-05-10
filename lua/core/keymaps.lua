@@ -20,6 +20,9 @@ map("n", "<D-a>", "ggVG", { noremap = true, silent = true, desc = "Select All" }
 -- Clear highlight search
 map("n", "<Esc>", "<cmd>nohlsearch<CR>", keymap_opts("Clear Search Highlight & Escape"))
 
+-- Close Location/Quickfix list window
+map("n", "<leader>c", ":lclose<CR>:cclose<CR>", { silent = true, desc = "Close Location/Quickfix List" })
+
 -- Undo/Redo (macOS like, optional)
 map("n", "<D-z>", "<Cmd>undo<CR>", { silent = true, noremap = true, desc = "Undo" })
 map("n", "<D-S-z>", "<Cmd>redo<CR>", { silent = true, noremap = true, desc = "Redo" })
