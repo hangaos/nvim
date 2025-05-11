@@ -14,7 +14,7 @@ return {
 			Error = " ",
 			Warn = " ",
 			Info = " ",
-			Hint = " ",
+			Hint = " ",
 		}
 
 		vim.diagnostic.config({

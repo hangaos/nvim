@@ -15,7 +15,7 @@ return {
 			always_divide_middle = true,
 			globalstatus = false,
 			refresh = {
-				statusline = 200,
+				statusline = 100,
 			},
 		},
 		sections = {
