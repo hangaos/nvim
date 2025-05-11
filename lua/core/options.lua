@@ -31,7 +31,9 @@ vim.opt.mouse = "a" -- Enable mouse support in all modes
 vim.opt.backspace = "indent,eol,start" -- Make backspace more flexible
 vim.opt.undofile = true -- Enable persistent undo
 vim.opt.updatetime = 250 -- Faster update time (for plugins like LSP)
-vim.opt.timeoutlen = 250 -- Shorter timeout for key sequences (e.g., leader key)
+vim.opt.timeoutlen = 300 -- Shorter timeout for key sequences (e.g., leader key)
+vim.opt.ttimeout = true
+vim.opt.ttimeoutlen = 10 -- Thời gian chờ cho key codes (như Esc)
 
 -- Leader Key (Very Important!)
 vim.g.mapleader = " " -- Set the leader key to Space

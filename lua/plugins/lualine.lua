@@ -49,7 +49,7 @@ return {
 					function()
 						local l = vim.fn.line(".")
 						local c = vim.fn.col(".")
-						return string.format("Ln %d Col %d", l, c)
+						return string.format("Ln %d:Col %d", l, c)
 					end,
 				},
 				{
@@ -74,7 +74,7 @@ return {
 				{
 					"diagnostics",
 					sources = { "nvim_lsp" },
-					symbols = { error = " ", warn = " ", info = " ", hint = " " },
+					symbols = { error = " ", warn = " ", info = " ", hint = " " },
 					colored = true,
 					gui = "italic",
 				},

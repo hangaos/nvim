@@ -14,6 +14,7 @@ return {
 		},
 		level = vim.log.levels.INFO,
 		top_down = true,
+		background_colour = "#000000",
 	},
 	config = function(_, opts)
 		require("notify").setup(opts)

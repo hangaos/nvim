@@ -45,6 +45,20 @@ map(
 -- Focus Neo-tree window
 map("n", "<leader>o", "<cmd>Neotree focus<CR>", { desc = "Neo-tree Focus", silent = true, noremap = true })
 
+-- nvim-spectre Keymaps
+map("n", "<leader>rp", function()
+	require("spectre").open()
+end, keymap_opts("Spectre: Replace in Project"))
+map("n", "<leader>rw", function()
+	require("spectre").open_visual({ select_word = true })
+end, keymap_opts("Spectre: Replace word under cursor"))
+map("v", "<leader>rv", function()
+	require("spectre").open_visual()
+end, keymap_opts("Spectre: Replace visual selection"))
+map("n", "<leader>rf", function()
+	require("spectre").open_file_search()
+end, keymap_opts("Spectre: Replace in current file"))
+
 -- =============================================================================
 -- == Insert Mode Mappings ==
 -- =============================================================================
